@@ -1,0 +1,271 @@
+@import './_settngs/variables.css';
+
+.App {
+  --footer-height: 64px;
+
+  box-sizing: border-box;
+  min-height: 100vh;
+  min-width: 100vw;
+  position: relative;
+  overflow: scroll;
+
+  padding-bottom: var(--footer-height);
+  text-align: center;
+  color: var(--text-color);
+
+  background-color: var(--background-color-1);
+  transition: color 250ms;
+  transition: background-color 500ms ease-in-out;
+}
+
+.App__Body {
+  padding-top: 64px;
+}
+
+.App_modal_open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.App_modal_open footer {
+  display: none;
+}
+
+@media (max-width: 599px) {
+  .App {
+    --footer-height: 160px;
+  }
+}
+
+
+
+
+.css{
+  max-height: 400px;
+}
+body{
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+.head{
+  background-color: #FFD32D;
+}
+
+.footerh6{
+  margin-left: 18%;
+}
+.footerh3{
+  color:rgb(250, 153, 56)
+}
+
+.head-css h1{
+  font-family: 'Montserrat', sans-serif; /*check this*/
+  font-weight: 900;
+  font-size: 3vw;
+  line-height: 1.5;
+  color: aliceblue;
+}
+
+.navbar-brand{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  opacity: 0.8;
+}
+.nav-link{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  font-size: 1rem;
+}
+.nav-item{
+  margin: 0 12px;
+}
+
+
+.feat h3{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem
+}
+.feat p{
+  color: #8f8f8f;
+}
+.ic{
+  font-size: 4rem;
+  color: #FFD32D;
+  margin-bottom: 1.5rem;
+}
+.feature{
+  padding: 5% 15%;
+  background-color: #fff;
+}
+.ic:hover{
+  color: #FFC600;
+}
+
+.feat{
+  padding: 5%;
+  text-align: center;
+  
+  }
+
+
+  #info{
+    background-color: #FFD32D;
+    text-align: center;
+  
+  
+  }
+  .info-text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 3rem;
+    color: #fff;
+    line-height: 1.5;
+  }
+  
+  .info-def{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 1.5;
+  }
+  .carousel-item{
+    padding: 5% 15%;
+    height: 400px;
+  }
+  @media only screen and  (max-width:1000px){
+    .carousel-item{
+      padding: 5% 15%;
+      height: 300px;
+    }
+    .info-def{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #fff;
+      line-height: 1.2;
+    }
+  }
+  @media only screen and  (max-width:600px){
+    .carousel-item{
+      padding: 5% 15%;
+      height: 200px;
+    }
+    .info-def{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 0.8rem;
+      color: #fff;
+      line-height: 1;
+    }
+    .info-text{
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #fff;
+      line-height: 1.2;
+    }
+    
+  }
+
+
+  .body{
+    background-color:aliceblue;
+    padding: 5% 0%;
+  }
+  .body p{
+    opacity: 0.8;
+  }
+
+
+
+
+  #sort{
+    text-align: center;
+  }
+  .anch{
+    align-self: center;
+    text-decoration: none;
+    font-size: 2vw;
+  }
+  .hexagon-wrapper {
+    margin: auto;
+    display: inline-flex;
+    text-align: initial;
+    transform: rotate(90deg);
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+  
+  }
+  .text-rotate{
+    transform: rotate(-90deg);
+  }
+  
+  .hexagon {
+    position: relative;
+    width: 46%;
+    height: 80%;
+    margin: auto;
+    color: white;
+    /* background: linear-gradient(-180deg, white, #fda3b2); */
+    background:#FFD32D;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    transition: 0.5s;
+  
+  }
+  
+  .hexagon i {
+    z-index: 1;
+    margin: auto;
+    font-size: 30px;
+    color: transparent;
+    /* background: linear-gradient(45deg, #a58fe9, #e37682); */
+    background: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    
+  }
+  
+  .hexagon:before,
+  .hexagon:after {
+    position: absolute;
+    content: "";
+    background: inherit;
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    transition: 0.5s;
+    transform-origin: center;
+  }
+  .hexagon:before {
+    transform: rotateZ(60deg);
+  }
+  .hexagon:after {
+    transform: rotateZ(-60deg);
+  }
+  .hexagon:hover {
+    border-radius: 50px;
+    transition: 0.5s;
+    background: black;
+  
+  }
+  .text-rotate:hover{
+    color: #FFD32D;
+  
+  }
+  .hexagon:hover:before {
+    border-radius: 50px;
+    transition: 0.5s;
+  }
+  .hexagon:hover:after {
+    border-radius: 50px;
+    transition: 0.5s;
+  }
+
+
